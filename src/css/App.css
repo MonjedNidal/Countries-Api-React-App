@@ -220,12 +220,14 @@ a:-webkit-any-link {
 @media (max-width: 768px) {
   .countryCard {
     width: 100%;
+    /* width: 16rem; */
   }
   .countryCard:hover {
     scale: 1.01;
   }
   .countryCard img {
-    width: unset;
+    width: fill;
+    /* aspect-ratio: /4; */
     height: unset;
   }
   .countriesContainer {
@@ -263,9 +265,6 @@ a:-webkit-any-link {
   }
 }
 @media (max-height: 100vh) {
-  /* Add your styles here for elements when the height is less than 100vh */
-
-  /* For example, you can set a minimum height for the body */
   .App {
     min-height: 100vh !important;
   }
