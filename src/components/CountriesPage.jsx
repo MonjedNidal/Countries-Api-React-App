@@ -48,6 +48,23 @@ function CountriesPage({ darkModeClicked }) {
           </div>
         ))}
       </div>
+      <div
+        className={`d-flex justify-content-center ${
+          darkModeClicked ? "darkFooter" : ""
+        }`}
+        style={{ backgroundColor: "unset !important" }}
+      >
+        <h5>
+          Challenge By{" "}
+          <a style={{ color: "#0096c7" }} href="https://frontendmentor.io">
+            Frontend Mentor
+          </a>{" "}
+          Coded By{" "}
+          <a style={{ color: "#0096c7" }} href="https://github.com/monjednidal">
+            MonjedNidal
+          </a>
+        </h5>
+      </div>
     </div>
   );
 }

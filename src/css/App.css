@@ -69,12 +69,6 @@
   width: 100%;
 }
 
-.search-icon {
-  position: relative;
-  right: 67%;
-  transform: translateY(10%);
-  color: #555;
-}
 .dropdownBtn {
   margin-right: 0.5rem;
   box-shadow: var(--boxShadow);
@@ -116,7 +110,7 @@
   background-color: var(--White-LightElements-DarkText);
   box-shadow: var(--boxShadow);
   width: 15.875rem;
-  transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s !important;
   color: var(--VeryDarkBlue-LightModeText);
   text-decoration: none;
 }
@@ -209,7 +203,8 @@ a:-webkit-any-link {
   color: var(--White-LightElements-DarkText) !important;
   transition: background-color ease-in-out 70ms;
 }
-.darkDetailsPage {
+.darkDetailsPage,
+.darkFooter {
   color: var(--White-LightElements-DarkText) !important;
   transition: background-color ease-in-out 70ms;
 }
@@ -220,13 +215,13 @@ a:-webkit-any-link {
 @media (max-width: 768px) {
   .countryCard {
     width: 100%;
-    /* width: 16rem; */
+    /* transition: all ease-in-out 0.2s; */
   }
   .countryCard:hover {
     scale: 1.01;
   }
   .countryCard img {
-    width: fill;
+    width: stretch;
     /* aspect-ratio: /4; */
     height: unset;
   }
