@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+:root {
+  --DarkBlue-DarkMode: hsl(209, 23%, 22%);
+  --VeryDarkBlue-DarkModeBackground: hsl(207, 26%, 17%);
+  --VeryDarkBlue-LightModeText: #111517;
+  --DarkGray-LightModeInput: hsl(0, 0%, 52%);
+  --VeryLightGray-LightModeBackground: hsl(0, 0%, 98%);
+  --White-LightElements-DarkText: hsl(0, 0%, 100%);
+  --boxShadow: 0px 0px 7px rgb(211, 211, 211);
+}
+
+.App {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--VeryLightGray-LightModeBackground);
+  height: fit-content;
+  color: var(--VeryDarkBlue-LightModeText);
+}
+.darkApp {
+  background-color: var(--VeryDarkBlue-DarkModeBackground);
+  --boxShadow: 0px 0px 7px var(--DarkBlue-DarkMode);
+  transition: background-color ease-in-out 70ms;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+  box-shadow: var(--boxShadow);
+}
+.navbar-brand {
+  font-weight: 800;
+}
+.moonIcon {
+  width: 1rem;
+  height: 1rem;
+}
+.darkModeBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.1rem 0.3rem;
+}
+.darkModeBtn:hover {
+  cursor: pointer;
+  background-color: var(--VeryLightGray-LightModeBackground);
+  border-radius: 5px;
+}
+.darkModeBtnOnDark:hover {
+  cursor: pointer;
+  background-color: var(--VeryDarkBlue-DarkModeBackground);
+  border-radius: 5px;
+}
+.darkModeBtnText {
+  font-weight: 600;
+  padding-top: 0.6rem;
+  margin-left: 0.6rem;
+}
+
+.mainForm {
+  margin-top: 3rem;
+}
+
+.countrySearchInput {
+  padding: 1rem 1.5rem;
+  /* padding-left: 3rem; */
+  box-shadow: var(--boxShadow);
+  border: none;
+  border-radius: 7px;
+  width: 100%;
+}
+
+.search-icon {
+  position: relative;
+  right: 67%;
+  transform: translateY(10%);
+  color: #555;
+}
+.dropdownBtn {
+  margin-right: 0.5rem;
+  box-shadow: var(--boxShadow);
+  background-color: white;
+  padding: 1rem 1rem;
+  width: 100%;
+  align-self: end;
+}
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border: unset;
+}
+.dropdown-toggle::after {
+  margin-left: 2em;
+}
+.dropdown-menu.show {
+  box-shadow: var(--boxShadow);
+  width: 90%;
+  border: unset;
+}
+.dropdown-item {
+  width: 100%;
+}
+.dropdown-item:active {
+  background-color: var(--DarkBlue-DarkMode);
+}
+
+.countriesContainer {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.countryCard {
+  height: fit-content;
+  border-radius: 7px;
+  background-color: var(--White-LightElements-DarkText);
+  box-shadow: var(--boxShadow);
+  width: 15.875rem;
+  transition: all ease-in-out 0.2s;
+  color: var(--VeryDarkBlue-LightModeText);
+  text-decoration: none;
+}
+
+.countryCard:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.countryCard img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width: 15.875rem;
+  height: 10.37375rem;
+}
+.cardText {
+  padding: 1rem;
+  font-size: 14px;
+}
+.cardText h5 {
+  font-size: 18px;
+  font-weight: 800;
+}
+.cardText p {
+  font-weight: 600;
+  margin: 0.6px;
+}
+.cardText p span {
+  font-weight: 400;
+}
+
+.detailsPage {
+  height: 80vh;
+  overflow: hidden;
+}
+.backBtn {
+  margin: 2rem 0rem;
+  align-self: flex-start;
+  padding: 0.6rem 2rem;
+  background-color: var(--White-LightElements-DarkText);
+  box-shadow: var(--boxShadow);
+  border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+}
+a:-webkit-any-link {
+  color: unset;
+  text-decoration: none;
+}
+.backBtn:hover {
+  scale: 1.05;
+}
+.imgContainer {
+  width: 100%;
+}
+.detailsPage p {
+  font-weight: 600;
+}
+.detailsPage p span {
+  font-weight: 400;
+}
+
+.detailsPage .countryName {
+  margin: 2rem 0rem;
+  font-weight: 800;
+}
+.detailsPage .borderCountries {
+  margin: 2rem 0rem;
+  width: 95%;
+}
+
+.detailsPage .borderCountries .borderCountry {
+  padding: 0.2rem 1rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0rem;
+  background-color: var(--White-LightElements-DarkText);
+  box-shadow: var(--boxShadow);
+  border-radius: 6px;
+  width: fit-content;
+}
+.darkNav,
+.darkNav a,
+.darkCountryCard,
+.darkInput,
+.darkDropdown,
+.dark-dropdown-menu,
+.darkItem,
+.darkBackBtn,
+.darkBorderCountry {
+  background-color: var(--DarkBlue-DarkMode) !important;
+  color: var(--White-LightElements-DarkText) !important;
+  transition: background-color ease-in-out 70ms;
+}
+.darkDetailsPage {
+  color: var(--White-LightElements-DarkText) !important;
+  transition: background-color ease-in-out 70ms;
+}
+.darkItem:hover {
+  background-color: var(--White-LightElements-DarkText) !important;
+  color: var(--VeryDarkBlue-LightModeText) !important;
+}
+@media (max-width: 768px) {
+  .countryCard {
+    width: 100%;
+  }
+  .countryCard:hover {
+    scale: 1.01;
+  }
+  .countryCard img {
+    width: unset;
+    height: unset;
+  }
+  .countriesContainer {
+    margin-top: 0px;
+  }
+  .dropdownBtn {
+    margin-top: 2rem;
+    position: unset;
+  }
+  .dropdown-menu.show {
+    width: 95%;
+  }
+  .divider {
+    display: none;
+  }
+  .detailsPage {
+    height: 100%;
+  }
+  .detailsPage .countryImg {
+    width: 80%;
+  }
+  .detailsPage .countryDetails {
+    width: 80%;
+  }
+  .backBtn {
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .detailsPage {
+    flex-direction: column;
+    justify-content: center !important;
+  }
+}
+@media (max-height: 100vh) {
+  /* Add your styles here for elements when the height is less than 100vh */
+
+  /* For example, you can set a minimum height for the body */
+  .App {
+    min-height: 100vh !important;
+  }
+}
