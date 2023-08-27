@@ -79,7 +79,7 @@ function DetailsPage({ darkModeClicked }) {
                 Currencies:{" "}
                 <span>
                   {selectedCountry.currencies.map((currency) => {
-                    return currency.name;
+                    return currency.name + ", ";
                   })}
                 </span>
               </p>

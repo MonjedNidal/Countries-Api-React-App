@@ -13943,7 +13943,7 @@
     "callingCodes": [
       "970"
     ],
-    "capital": "Ramallah",
+    "capital": "Jerusalem",
     "altSpellings": [
       "PS",
       "State of Palestine",
@@ -13962,9 +13962,10 @@
       "UTC+02:00"
     ],
     "borders": [
-      "PSE",
       "EGY",
-      "JOR"
+      "JOR",
+      "SYR",
+      "LBN"
     ],
     "nativeName": "فلسطين",
     "numericCode": "275",

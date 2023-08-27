@@ -19,7 +19,7 @@
 .darkApp {
   background-color: var(--VeryDarkBlue-DarkModeBackground);
   --boxShadow: 0px 0px 7px var(--DarkBlue-DarkMode);
-  transition: background-color ease-in-out 70ms;
+  transition: background-color ease-in-out 20ms;
 }
 
 .navbar {
