@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-countries-api-react-app-670Dn4QuZt](https://www.frontendmentor.io/solutions/responsive-countries-api-react-app-670Dn4QuZt)
+- Live Site URL: [https://monjedcountriesapi.netlify.app/](https://monjedcountriesapi.netlify.app/)
 
 ## My process
 
@@ -32,6 +32,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
 ## Author
